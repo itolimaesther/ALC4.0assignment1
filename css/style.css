@@ -1,0 +1,421 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Times New Roman", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+header {
+  position: relative;
+  width: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1267px){  
+  .header {
+    width: 100%;
+  }
+  .header__text-box {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+  .header {
+    width: 100%;
+  }
+  .header__text-box {
+    width: 600px;
+  }
+}
+
+.navigation {
+  padding-top: 21px;
+    position: relative;
+    
+    width: 100%;
+    top: 0;
+    height: 52px;
+}
+span.navigation__icon {
+  margin-left: 18px;
+  font-size: 18px;
+}
+
+.nav-links {
+  list-style: none;
+  float: right;
+  margin-right: 45px;
+  font-size: 18px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}
+
+.nav-logo .whyd-logo {
+  font-weight: 700;
+  margin-left: 3rem;
+  font-size: 14.5px;
+}
+
+.header__text-box {
+  margin: 0 auto;
+  max-width: 50%;
+}
+.heading-primary {
+  margin-top: 5rem;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.heading-primary--main,
+.heading-primary--sub,
+.heading-primary--sub--1 {
+  color: #999999;
+  display: block;
+}
+.heading-primary--main .heading-primary--main--1 {
+  color: #000;
+  font-weight: bold;
+}
+
+.header__text-box button {
+  border-color: #000;
+  border-style: none;
+}
+button .btn--white {
+  color: #000000;
+  background-color: #fff !important;
+  font-weight: 700;
+}
+button .btn--black,
+.first_layer--block {
+  background-color: #000;
+  color: #ffffff;
+}
+
+button .btn:link,
+button .btn:visited,
+.first_layer--block {
+  border-radius: 3px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+  position: relative;
+  font-size: 10px;
+}
+
+main {
+  margin-top: 10%;
+}
+/* #img-section {
+  display: flex;
+  width: 100%;
+}
+
+.card:not(:last-child){
+  background-color: #fff;
+  width: 100%;
+  margin-right: 12px;
+  background-color: #fff;
+border: 5px;
+} */
+
+#img-section {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  margin-right: 46px;
+}
+.card-image img {
+  width: 400px;
+}
+.card-text {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+figcaption {
+  font-size: 17px;
+  color: #999999;
+}
+figcaption span {
+  color: #000;
+}
+
+.card-text h2 {
+  color: #fff !important;
+  font-size: 18px;
+  width: 100px;
+  line-height: 2;
+}
+.card-text h2 span {
+  color: #fff;
+  width: 180px !important;
+}
+h2.heading-1 {
+  width: 150px;
+}
+.circle,
+.circle2,
+.circle3,
+.circle4 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #fff;
+  left: 80px;
+  bottom: 60px;
+  border-style: none;
+  animation: ripple 1.5s linear infinite;
+  transition: all 0.7s ease;
+}
+.circle a,
+.circle2 h1,
+.circle3 h1,
+.circle4 h1 {
+  text-align: center;
+  position: relative;
+  bottom: 3px;
+  font-size: 18px;
+}
+.circle a:link {
+  text-decoration: none;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3),
+      0 0 0 1px rgba(255, 255, 255, 0.3), 0 0 0 3px rgba(255, 255, 255, 0.3),
+      0 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3),
+      0 0 0 4px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0),
+      0 0 0 30px rgba(255, 255, 255, 0);
+  }
+}
+.circle:hover {
+  transform: scale(1.1);
+}
+.circle:focus {
+  outline: none;
+}
+
+.layer3,
+.layer5,
+.layer6,
+.layer7 {
+  position: relative;
+  top: 80px;
+}
+.layer3-sub,
+.layer4_sub,
+.layer5_sub,
+.layer6_sub {
+  margin: 0 10% 0 10%;
+}
+
+/* .first-layer {
+  display: block;
+} */
+
+.first_layer--button {
+  border-color: #000;
+  border-style: none;
+}
+.first_layer--text {
+  color: grey;
+  font-size: 34px;
+  line-height: 70px;
+}
+.second-row,
+.layer5_sub--row,
+.layer6_sub--row,
+.layer7_sub--row {
+  display: flex;
+  width: 100%;
+}
+
+.row-text:not(:last-child) {
+  margin-right: 90px;
+}
+.row-text {
+  width: 50%;
+}
+.paragraph-1,
+.paragraph-2 {
+  font-size: 16px;
+  text-align: justify;
+}
+.paragraph-2 {
+  margin-top: 17px;
+}
+.layer4 {
+  position: relative;
+  top: 167px;
+}
+
+.layer4_sub--img img {
+  width: 100%;
+}
+.circle2 {
+  top: 33%;
+  left: 52%;
+}
+.circle2 h1,
+.circle3 h1,
+.circle4 h1 {
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  top: 3px;
+}
+.circle3 {
+  top: 41%;
+  left: 38%;
+}
+.circle4 {
+  top: 65%;
+  left: 61%;
+}
+.circle2-paragraph,
+.circle3-paragraph,
+.circle4-paragraph {
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  font-weight: 700;
+  font-size: 9px;
+}
+
+.circle2-paragraph {
+  top: 42%;
+  left: 30%;
+}
+.circle3-paragraph {
+  top: 34%;
+  left: 56%;
+}
+.circle4-paragraph {
+  top: 62%;
+  left: 65%;
+  width: 198px;
+}
+.circle4-paragraph p {
+  font-weight: 700;
+  font-size: 9px;
+}
+.layer4_sub--paragraph {
+  font-size: 33px;
+  text-align: center;
+}
+.layer4_sub--paragraph span {
+  background-color: #f1f1f1;
+}
+.layer5 {
+  top: 220px;
+}
+.layer5_sub--img {
+  width: 100%;
+  height: 500px;
+}
+.layer5_sub--img img {
+  width: 100%;
+  height: 100%;
+}
+
+.layer5_sub--text {
+  margin-left: 90px;
+  margin-top: 30px;
+}
+.layer6 {
+  top: 260px;
+}
+.layer6_sub--img {
+  width: 100%;
+  margin-top: -84px;
+  margin-left: -95px;
+}
+.layer6_sub--img img {
+  width: 100%;
+}
+.layer6_sub--text {
+  margin-right: 76px;
+  padding-left: 12px;
+  padding-right: 95px;
+  width: 76%;
+}
+
+.layer7 {
+  top: 300px;
+}
+
+.layer7_sub {
+  margin: 0 10% 0 8%;
+}
+
+.layer7_sub--img {
+  width: 218%;
+  height: 340px;
+}
+
+.layer7_sub--img img {
+  width: 100%;
+  height: 100%;
+}
+.layer7_sub--text {
+  margin-left: 90px;
+  margin-top: 30px;
+}
+#footer {
+  position: absolute;
+  bottom: -15%;
+  width: 100%;
+  height: 7.5rem;
+}
+
+footer ul {
+  display: flex;
+  float: right;
+}
+
+footer li {
+  list-style: none;
+  margin-right: 43px;
+  font-size: 16px;
+}
+
+#page_container {
+  position: relative;
+  min-height: 100vh;
+}
+.footer_sub {
+  margin: 0 3% 0 3%;
+  height: 7.5rem;
+}
+.nav-logo2 {
+  display: inline-block;
+}
+.whyd-logo2 {
+  font-weight: 700;
+  font-size: 14.5px;
+}
